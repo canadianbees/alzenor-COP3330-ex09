@@ -11,6 +11,7 @@ public class Paint
     private final int length;
     private final int width;
 
+    //asks user for the length and width of the room
     public Paint()
     {
         Scanner scan = new Scanner(System.in);
@@ -22,6 +23,7 @@ public class Paint
         this.width = scan.nextInt();
     }
 
+    //calculates how many gallons of paint are needed to paint the room based on the specifications given by the user
     public void howManyGallons()
     {
         int roomSqFt = this.length * this.width;
